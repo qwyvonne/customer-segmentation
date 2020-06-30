@@ -1,15 +1,15 @@
-# customer-segmentation
+# Customer Segmentation
 
-PROBLEM<br/>
+**PROBLEM**<br/>
 Segment customers into different groups and create customer pofile 
 
-TECHNIQUES<br/>
+**TECHNIQUES**<br/>
 Data cleansing and visualization: dplyr, tidyr, ggplot2 <br/>
 Clustering: psych, cluster, mclust
 
 
 
-DATASETS<br/>
+**DATASETS**<br/>
 Audience Listening Respond: survey data that contains 48881 observations and 217 variables about customer demographic, income, fashion attitude, and lifestyle etc. Raw data is in binary format.  
 
 VARIABLE SELECTION
@@ -36,8 +36,8 @@ clusplot(reduced,
 ```
 <br/>
 
-<p float="left">
-  <img src="/h_cluster_scatterplot.png" weight = "300" height = "300" />
+<p align="center">
+  <img src="/h_cluster_scatterplot.png" weight = "300" height = "300" />  &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp; 
   <img src="/h_cluster_two.png" weight = "300" height = "300" /> 
 </p>
 
@@ -51,8 +51,9 @@ within_ss = sapply(1:10,FUN = function(x) kmeans(x = reduced,centers = x,iter.ma
 
 ```
 ###### Use Silhouette Plot to determine the number of clusters
-<img src = "silou.png" weight = "300" height = "300">
-
+<p align="center">
+  <img src = "silou.png" weight = "300" height = "300">
+</p>
 ###### A cluster of 3 or 4 seems to be the optimal. Let's further calculate the silhouette width given these two number of clusters
 
 ```
@@ -62,8 +63,8 @@ pam(reduced,k = 4)$silinfo$avg.width
 #0.16
 ```
 ###### we choose 3 clusters 
-<p float="left">
-  <img src="/kmeans_3clusters_scatter.png" weight = "300" height = "300" />
+<p align="center">
+  <img src="/kmeans_3clusters_scatter.png" weight = "300" height = "300" /> &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp; 
   <img src="/kmeans_clusters_new.png" weight = "300" height = "300" /> 
 </p>
 
@@ -82,11 +83,13 @@ ggplot(data=data.frame(cluster = 1:10,bic = mclust_bic),aes(x=cluster,y=bic))+
   
 ```
 <br/>
-<img src = "model_based_bic.png" weight = "300" height = "300">
-
+<p align="center">
+  <img src = "model_based_bic.png" weight = "300" height = "300">
+</p>
 ###### we need to find the nunber of cluster with low bic, cluster of 10 is low, but is not practical. Considering the result of other clustering method, so we choose 3 clusters
 
-<p float="center">
+<p align="center">
   <img src="/modelbasedcuslterscatter.png" weight = "300" height = "300" />
   <img src="/mcluster_plot.png" weight = "300" height = "300" /> 
 </p>
+
