@@ -86,7 +86,7 @@ ggplot(data=data.frame(cluster = 1:10,bic = mclust_bic),aes(x=cluster,y=bic))+
 ###### we need to find the nunber of cluster with low bic, cluster of 10 is low, but is not practical. Considering the result of other clustering method, so we choose 3 clusters
 
 <p align="center">
-  <img src="/modelbasedcuslterscatter.png" weight = "300" height = "300" /> &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp; 
+  <img src="/modelbasedcuslterscatter.png" weight = "400" height = "400" /> &nbsp;   &nbsp;   &nbsp;   &nbsp; 
   <img src="/mcluster_plot.png" weight = "400" height = "400" /> 
 </p>
 
