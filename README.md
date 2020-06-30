@@ -1,5 +1,8 @@
 # Customer Segmentation
 
+**KEYWORDS**<br/> 
+Clustering, customer segmentation, persona, customer profiling 
+
 **PROBLEM**<br/>
 Segment customers into different groups and create customer pofile<br/>
 
