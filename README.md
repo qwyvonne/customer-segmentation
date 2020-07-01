@@ -37,8 +37,8 @@ clusplot(reduced,
 <br/>
 
 <p align="center">
-  <img src="/h_cluster_scatterplot.png" weight = "400" height = "400" />  &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp; 
-  <img src="/h_cluster_two.png" weight = "400" height = "400" /> 
+  <img src="/h_cluster_scatterplot.png" weight = "300" height = "300" />  &nbsp;   &nbsp;   &nbsp;   &nbsp;   
+  <img src="/h_cluster_two.png" weight = "300" height = "300" /> 
 </p>
 
 # 
@@ -65,7 +65,7 @@ pam(reduced,k = 4)$silinfo$avg.width
 ###### we choose 3 clusters 
 
 <p align="center">
-  <img src="/kmeans_3clusters_scatter.png" weight = "300" height = "300" /> &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp; 
+  <img src="/kmeans_3clusters_scatter.png" weight = "300" height = "300" /> &nbsp;   &nbsp;   &nbsp;   &nbsp;   
   <img src="/kmeans_clusters_new.png" weight = "300" height = "300" /> 
 </p>
 
